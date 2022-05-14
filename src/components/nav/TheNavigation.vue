@@ -13,14 +13,7 @@
   </header>
 </template>
 
-<script>
-export default {
- 
-  methods: {
-    
-  },
-};
-</script>
+
 
 <style scoped>
 header {
@@ -46,9 +39,18 @@ ul {
 li {
   margin: 0 2rem;
 }
-
-a {
+a{
   text-decoration: none;
+
+  background: transparent;
+  border:1px solid transparent;
+  cursor:pointer;
+  color:white;
+  padding:0.5rem 1.5rem;
+  display:inline-block;
+
+}
+button {
   font: inherit;
   background: transparent;
   border: 1px solid transparent;
@@ -60,7 +62,7 @@ a {
 
 a:hover,
 a:active,
-a.router-link-active {
+a.active{
   color: #f1a80a;
   border-color: #f1a80a;
   background-color: #1a037e;
